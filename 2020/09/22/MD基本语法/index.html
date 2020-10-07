@@ -1,85 +1,80 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Hello Blog | EsNaSc</title><script src="https://cdn.bootcss.com/valine/1.4.4/Valine.min.js"></script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="EsNaSc" type="application/atom+xml">
+</head><body><header><nav><a href="/">Home</a><a href="/archives/">Archives</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2020-09-22T05:22:31.510Z" id="date"> 2020-09-22</time></span><br><span>updated:<time datetime="2020-10-07T14:14:17.509Z" id="updated"> 2020-10-07</time></span></div><h1>Hello Blog</h1><hr></div><div id="post-content"><h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><h2 id="1-代码块"><a href="#1-代码块" class="headerlink" title="1.代码块"></a>1.代码块</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//```语言</span></span><br></pre></td></tr></table></figure>
 
-block content
-  -
-    const prev = page.prev
-    const next = page.next
-    const dateConf = theme.post.date
-    const updatedConf = theme.post.updated
-    const sourceConf = theme.post.source
-    const excerptConf = theme.post.excerpt
-    const reward = theme.post.reward
-    const appID = theme.valine.app_id
-    const appKey = theme.valine.app_key
-    const tocContent = toc(page.content, theme.toc)
-  #post-bg
-    #post-title
-      if dateConf || updatedConf
-        #post-info
-          if dateConf
-            span date:
-              time(datetime=page.date.toJSON())#date
-                = ' ' + date(page.date, date_format)
-          if dateConf && updatedConf
-            br
-          if updatedConf
-            span updated:
-              time(datetime=page.updated.toJSON())#updated
-                = ' ' + date(page.updated, date_format)
-          if sourceConf
-            br
-            span#post-source Source File:
-              br
-              span= page.source
-      h1= page.title
-      hr
-    #post-content
-      if excerptConf
-        != page.content
-      else
-        != page.more
-      #paginator!= paginator()
-    #post-footer
-      if prev || next
-        hr
-      if prev !== undefined
-        a(href=url_for(prev.path))
-          |← Prev
-          =' ' + prev.title
-      if prev && next
-        <span style="color: #fe2"> | </span>
-      if next !== undefined
-        a(href=url_for(next.path))
-          =next.title + ' '
-          |Next →
-      if prev || next
-        hr
-    #bottom-btn
-      if tocContent.length > 0
-        a#to-index(href="#post-index" title="index") ≡
-      a#to-top(href="#post-title" title="to top") ∧
-    if reward === true
-      details#reward
-        summary 打赏
-        #alipay
-          span 支付宝 | Alipay
-          br
-          img(src= config.root + 'img/Alipay.png')
-        #wechat
-          span 微信 | WeChat
-          br
-          img(src= config.root + 'img/WeChat.png')
-    #Valine
-    script
-      |new Valine({
-      |  el: '#Valine'
-      |  , appId: '#{appID}'
-      |  , appKey: '#{appKey}'
-      |  , placeholder: '此条评论委托企鹅物流发送'
-      |})
 
-block aside-block
-  - const tocContent = toc(page.content, theme.toc)
-  if tocContent.length > 0
-    h1 INDEX
-    #post-index!= tocContent
+
+
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//cpp with hello world</span></span><br><span class="line">include&lt;iostream.h&gt;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;hello wordl&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line">print(<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-标题"><a href="#2-标题" class="headerlink" title="2.标题"></a>2.标题</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#[空格] 一级</span><br><span class="line">##[空格] 二级</span><br><span class="line">###[空格] 三级    </span><br></pre></td></tr></table></figure>
+
+<h2 id="3-字体"><a href="#3-字体" class="headerlink" title="3.字体"></a>3.字体</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//加粗</span></span><br><span class="line">**无产阶级**</span><br><span class="line"><span class="comment">//代码高亮显示</span></span><br><span class="line">==资产阶级==</span><br><span class="line"><span class="comment">//删除线</span></span><br><span class="line">~~阶级斗争~~</span><br><span class="line"><span class="comment">//斜体</span></span><br><span class="line">*中产阶级*</span><br></pre></td></tr></table></figure>
+
+<p><strong>无产阶级</strong></p>
+<p>==阶级斗争==</p>
+<p><del>资产阶级</del></p>
+<p><em>中产阶级</em></p>
+<h2 id="4-引用"><a href="#4-引用" class="headerlink" title="4.引用"></a>4.引用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引用语法</span></span><br><span class="line">&gt;作者：赵航锐</span><br><span class="line">&gt;&gt;作者：赵航锐   </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>作者：***</p>
+</blockquote>
+<blockquote>
+<p>作者</p>
+<blockquote>
+<p>作者</p>
+</blockquote>
+</blockquote>
+<h2 id="5-分割线"><a href="#5-分割线" class="headerlink" title="5.分割线"></a>5.分割线</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//分割线</span></span><br><span class="line">---</span><br><span class="line"><span class="comment">//分割线</span></span><br><span class="line">***</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="6-图片插入"><a href="#6-图片插入" class="headerlink" title="6.图片插入"></a>6.图片插入</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//在线图片/本地图片</span></span><br><span class="line">![我的图片](路径)</span><br></pre></td></tr></table></figure>
+
+<p><img src="%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98.assets/%E5%BE%AE%E8%BD%AF.PNG" alt="我的照片"></p>
+<h2 id="7-超链接"><a href="#7-超链接" class="headerlink" title="7.超链接"></a>7.超链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;超链接语法</span><br><span class="line">[我的码云](https:&#x2F;&#x2F;gitee.com&#x2F;feoar)</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://gitee.com/feoar">我的码云</a></p>
+<h2 id="8-列表"><a href="#8-列表" class="headerlink" title="8.列表"></a>8.列表</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//无序列表</span></span><br><span class="line">- 目录<span class="number">1</span></span><br><span class="line">- 目录<span class="number">2</span></span><br><span class="line">- 目录<span class="number">3</span>    </span><br><span class="line"><span class="comment">//有序列表</span></span><br><span class="line"><span class="number">1.</span>项目</span><br><span class="line"><span class="number">2.</span>项目   </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>目录1</li>
+<li>目录2</li>
+<li>目录3  <ol>
+<li>项目</li>
+<li>项目</li>
+</ol>
+</li>
+</ul>
+<h2 id="9-表格"><a href="#9-表格" class="headerlink" title="9.表格"></a>9.表格</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><blockquote>
+<p>hello blog</p>
+</blockquote>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<div id="paginator"></div></div><div id="post-footer"><hr><a href="/2020/10/06/hello-world/">← Prev Hello Blog</a><hr></div><div id="bottom-btn"><a id="to-index" href="#post-index" title="index">≡</a><a id="to-top" href="#post-title" title="to top">∧</a></div><details id="reward"><summary>打赏</summary><div id="alipay"><span>支付宝 | Alipay</span><br><img src="/img/Alipay.png"></div><div id="wechat"><span>微信 | WeChat</span><br><img src="/img/WeChat.png"></div></details><div id="Valine"></div><script>new Valine({
+ el: '#Valine'
+ , appId: ''
+ , appKey: ''
+ , placeholder: '此条评论委托企鹅物流发送'
+})</script></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/"> Dr.FeOAr</a></h1><section id="total"><a id="total-archives" href="/archives"><span class="total-title">Archives Total:</span><span class="total-number">2</span></a><div id="total-tags"><span class="total-title">Tags:</span><span class="total-number">0</span></div><div id="total-categories"><span class="total-title">Categories:</span><span class="total-number">0</span></div></section></div><div id="aside-block"><h1>INDEX</h1><div id="post-index"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">Markdown语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.1.</span> <span class="toc-text">1.代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%A0%87%E9%A2%98"><span class="toc-number">1.2.</span> <span class="toc-text">2.标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%AD%97%E4%BD%93"><span class="toc-number">1.3.</span> <span class="toc-text">3.字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%BC%95%E7%94%A8"><span class="toc-number">1.4.</span> <span class="toc-text">4.引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">1.5.</span> <span class="toc-text">5.分割线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5"><span class="toc-number">1.6.</span> <span class="toc-text">6.图片插入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="toc-number">1.7.</span> <span class="toc-text">7.超链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E5%88%97%E8%A1%A8"><span class="toc-number">1.8.</span> <span class="toc-text">8.列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%A1%A8%E6%A0%BC"><span class="toc-number">1.9.</span> <span class="toc-text">9.表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.10.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.10.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.10.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.10.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.10.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol></li></ol></div></div><footer><nobr><span class="text-title">©</span><span class="text-content">1970 to 2020</span></nobr><wbr><nobr><span class="text-title">ICP</span><span class="text-content">——备案号——</span></nobr><wbr><wbr><nobr>published with&nbsp;<a target="_blank" rel="noopener" href="http://hexo.io">Hexo&nbsp;</a></nobr><wbr><nobr>Theme&nbsp;<a href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight&nbsp;</a></nobr><wbr><nobr>by&nbsp;<a href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/arknights.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script></body></html>
