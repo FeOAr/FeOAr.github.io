@@ -1,9 +1,873 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>EsNaSc</title><script src="https://cdn.bootcss.com/valine/1.4.4/Valine.min.js"></script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
- font-family: BenderLight;
- src: local('Bender'), url("/font/BenderLight.ttf");
-}
-@font-face {
- font-family: 'JetBrains Mono';
- src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
-}</style><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="EsNaSc" type="application/atom+xml">
-</head><body><header><nav><a href="/">Home</a><a href="/archives/">Archives</a></nav></header><main><article><a class="recent-post" href="/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/"><div class="recent-info"><span class="categories"><span>NO CATEGORY</span></span><span class="tags"><object><a href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">基础学习</a></object></span><time datetime="2020-10-07T16:00:00.000Z">2020-10-08</time></div><h1 class="recent-title">Java学习</h1><div class="recent-excerpt"></div><span class="read-more">READ MORE +</span></a><a class="recent-post" href="/2020/10/07/MD%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"><div class="recent-info"><span class="categories"><span>NO CATEGORY</span></span><span class="tags"><object><a href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">基础学习</a></object></span><time datetime="2020-10-06T16:00:00.000Z">2020-10-07</time></div><h1 class="recent-title">Markdown语法</h1><div class="recent-excerpt"></div><span class="read-more">READ MORE +</span></a><a class="recent-post" href="/2020/10/07/CSDN_MD_GRAMMAR/"><div class="recent-info"><span class="categories"><span>NO CATEGORY</span></span><span class="tags"><object><a href="/tags/%E5%BC%95%E7%94%A8%E5%A4%87%E5%BF%98/">引用备忘</a></object></span><time datetime="2020-10-06T16:00:00.000Z">2020-10-07</time></div><h1 class="recent-title">Markdown form CSDN</h1><div class="recent-excerpt"></div><span class="read-more">READ MORE +</span></a><a class="recent-post" href="/2020/10/07/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/"><div class="recent-info"><span class="categories"><span>NO CATEGORY</span></span><span class="tags"><object><a href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">基础学习</a></object></span><time datetime="2020-10-06T16:00:00.000Z">2020-10-07</time></div><h1 class="recent-title">汇编语言</h1><div class="recent-excerpt"></div><span class="read-more">READ MORE +</span></a><a class="recent-post" href="/2020/10/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><div class="recent-info"><span class="categories"><span>NO CATEGORY</span></span><span class="tags"><object><a href="/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/">课后作业</a></object></span><time datetime="2020-10-06T16:00:00.000Z">2020-10-07</time></div><h1 class="recent-title">读书笔记</h1><div class="recent-excerpt"></div><span class="read-more">READ MORE +</span></a><a class="recent-post" href="/2020/10/06/hello-world/"><div class="recent-info"><span class="categories"><span>NO CATEGORY</span></span><span class="tags"><span>empty</span></span><time datetime="2020-10-06T15:48:52.542Z">2020-10-06</time></div><h1 class="recent-title">Hello Blog</h1><div class="recent-excerpt"></div><span class="read-more">READ MORE +</span></a><div id="paginator"><span class="page-number current">1</span></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/"> Dr.FeOAr</a></h1><section id="total"><a id="total-archives" href="/archives"><span class="total-title">Archives Total:</span><span class="total-number">6</span></a><div id="total-tags"><span class="total-title">Tags:</span><span class="total-number">3</span></div><div id="total-categories"><span class="total-title">Categories:</span><span class="total-number">0</span></div></section></div><div id="aside-block"></div><footer><nobr><span class="text-title">©</span><span class="text-content">1970 to 2020</span></nobr><wbr><nobr><span class="text-title">ICP</span><span class="text-content">——备案号——</span></nobr><wbr><wbr><nobr>published with&nbsp;<a target="_blank" rel="noopener" href="http://hexo.io">Hexo&nbsp;</a></nobr><wbr><nobr>Theme&nbsp;<a href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight&nbsp;</a></nobr><wbr><nobr>by&nbsp;<a href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/arknights.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>EsNaSc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="personal blog of learning">
+<meta property="og:type" content="website">
+<meta property="og:title" content="EsNaSc">
+<meta property="og:url" content="https://github.com/FeOAr/FeOAr.github.io.git/index.html">
+<meta property="og:site_name" content="EsNaSc">
+<meta property="og:description" content="personal blog of learning">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="FeOAr">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="EsNaSc" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">EsNaSc</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/FeOAr/FeOAr.github.io.git"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Java学习pro版" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/" class="article-date">
+  <time datetime="2020-10-07T16:00:00.000Z" itemprop="datePublished">2020-10-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/">Java学习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Java学习pro版"><a href="#Java学习pro版" class="headerlink" title="Java学习pro版"></a>Java学习pro版</h1><h2 id="Java基础语法"><a href="#Java基础语法" class="headerlink" title="Java基础语法"></a>Java基础语法</h2><h3 id="注释，标识符，关键字"><a href="#注释，标识符，关键字" class="headerlink" title="注释，标识符，关键字"></a>注释，标识符，关键字</h3><h4 id="Java注释"><a href="#Java注释" class="headerlink" title="Java注释"></a>Java注释</h4><ul>
+<li><p>单行注释</p>
+</li>
+<li><p>多行注释</p>
+</li>
+<li><p>文档注释</p>
+<p><img src="Java%E5%AD%A6%E4%B9%A0pro%E7%89%88.assets/0wYo8g.png"></p>
+</li>
+</ul>
+<h4 id="Java标识符"><a href="#Java标识符" class="headerlink" title="Java标识符"></a>Java标识符</h4><h5 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h5><img src="Java学习pro版.assets/0wY7vj.png" style="zoom:50%;" />
+
+<h5 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h5><blockquote>
+<p>类名，变量名，方法名都称为标识符。</p>
+</blockquote>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><blockquote>
+<p><strong>强类型语言</strong></p>
+</blockquote>
+<ul>
+<li>Java数据类型有两类<ul>
+<li>基本类型（primitive type）</li>
+<li>引用类型（reference type）</li>
+</ul>
+</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/10/08/0wYbKs.png" style="zoom: 50%;" />
+
+<ol>
+<li><p>boolean    (true/false&lt;—defaule)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>byte          (节约空间)</p>
+</li>
+<li><p>short / int / long       </p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//eg.</span></span><br><span class="line"><span class="keyword">long</span> c1 = <span class="number">100324532456L</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">//进制拓展 二进制0b 八进制0 十进制 十六进制0x</span></span><br><span class="line"><span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> i2 = <span class="number">010</span>;   <span class="comment">//八进制</span></span><br><span class="line"><span class="keyword">int</span> i3 = <span class="number">0x10</span>;  <span class="comment">//十六进制</span></span><br><span class="line">System.out.println(i);</span><br><span class="line">System.out.println(i2);</span><br><span class="line">System.out.println(i3);</span><br><span class="line"></span><br><span class="line"><span class="comment">//JDK7以后，数字之间可以加下划线分割</span></span><br><span class="line"><span class="keyword">int</span> money = <span class="number">10_0000_0000</span>;</span><br><span class="line"><span class="keyword">int</span> a = <span class="number">20</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">long</span> b = a * money;	</span><br><span class="line"><span class="comment">//b会溢出解决方法 -&gt; long b = a * (long)money;或 int money = 10_0000_0000L;P.S. &#x27;L&#x27;一般大写</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>float / double</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> f1 = <span class="number">1.23f</span></span><br><span class="line"><span class="keyword">double</span> d1 = <span class="number">4.457d</span></span><br><span class="line"><span class="comment">// 浮点数有损失，可以尝试使用BigDecimal 数学工具类</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>char    ( \u0000 - \uffff   ||    Unicode编码 2字节  ||    String属于类)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> c3 = <span class="string">&#x27;\u0061&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>整数数拓展</p>
+</li>
+<li><p>浮点数拓展</p>
+</li>
+<li><p>字符拓展</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String s;</span><br><span class="line">s.equals(<span class="string">&quot;hello&quot;</span>);	<span class="comment">//判断字符串s和hello是否相等</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>强制转换</p>
+<blockquote>
+<p> （类型）变量名</p>
+</blockquote>
+</li>
+<li><p>转义字符</p>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<ul>
+<li>基本类型（一种变量）—-&gt;  结构体  （多种变量捆绑）   —-&gt;  类（多种变量 + 方法）</li>
+</ul>
+</blockquote>
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><blockquote>
+<p>低 ——–（自动）———–&gt; 高（字节）</p>
+<p>​     &lt;——–（强制）———– </p>
+<p>byte, short, char —&gt; int —&gt; long —&gt; float —&gt; double (小数优先级大于整数)</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1.不能转换布尔值</span></span><br><span class="line"><span class="comment">2.不能将对象类型转换为不相干的类型</span></span><br><span class="line"><span class="comment">3.高容量转低容量时，强制转换</span></span><br><span class="line"><span class="comment">4.转换时可能存在内存溢出或精度问题</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="变量常量"><a href="#变量常量" class="headerlink" title="变量常量"></a>变量常量</h3><p>==不建议一行定义多个变量==</p>
+<blockquote>
+<ul>
+<li><p>类变量</p>
+</li>
+<li><p>实例变量</p>
+</li>
+<li><p>局部变量</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>类成员变量：首字母小写和驼峰原则</li>
+<li>局部变量：首字母小写和驼峰原则</li>
+<li>常量 (final) ：大写字母和下划线</li>
+<li>类名：首字母小写和驼峰原则</li>
+<li>方法名：首字母小写和驼峰原则</li>
+</ul>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><img src="https://s1.ax1x.com/2020/10/08/0wYT2Q.png" alt="运算符" style="zoom: 67%;" />
+
+
+
+<h3 id="包机制，JavaDoc"><a href="#包机制，JavaDoc" class="headerlink" title="包机制，JavaDoc"></a>包机制，JavaDoc</h3><h5 id="包机制"><a href="#包机制" class="headerlink" title="包机制"></a>包机制</h5><blockquote>
+<p>package pk1[. pkg2[. pkg3…….]]</p>
+</blockquote>
+<p>eg. com.baidu.www    ———&gt;    com\baidu\www</p>
+<blockquote>
+<p>import package1[.package2….].(classname|*);</p>
+</blockquote>
+<p>eg. import com. baidu. www. *;</p>
+<hr>
+<h5 id="JavaDoc"><a href="#JavaDoc" class="headerlink" title="JavaDoc"></a>JavaDoc</h5><blockquote>
+<p>JavaDoc命令是用来生成自己的API文档</p>
+<blockquote>
+<p>API: API（Application Programming Interface，应用程序接口）是一些预先定义的函数，或指软件系统不同组成部分衔接的约定。 [1]  用来提供应用程序与开发人员基于某软件或硬件得以访问的一组例程，而又无需访问源码，或理解内部工作机制的细节。</p>
+</blockquote>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//eg.</span></span><br><span class="line"><span class="keyword">package</span> Base.First.Demo;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> zhr</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> 1.0</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo01</span> </span>&#123;</span><br><span class="line">    String name;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> name</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">test</span><span class="params">(String name)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="Java%E5%AD%A6%E4%B9%A0pro%E7%89%88.assets/QQ%E6%88%AA%E5%9B%BE20201006135418.png" alt="doc"></p>
+<p><img src="Java%E5%AD%A6%E4%B9%A0pro%E7%89%88.assets/0wYIPS.png" alt="参数信息"></p>
+<hr>
+<h2 id="Java流程控制"><a href="#Java流程控制" class="headerlink" title="Java流程控制"></a>Java流程控制</h2><h3 id="1-用户交互Scanner"><a href="#1-用户交互Scanner" class="headerlink" title="1.用户交互Scanner"></a>1.用户交互Scanner</h3><blockquote>
+<p>Scanner s = new Scanner(System.in);</p>
+</blockquote>
+<ul>
+<li>通过Scanner类的next() 与 nextLine() 方法获取输入字符串，在读取前一般使用hasNext() 与hasNextLine()判断是或否还有输入的数据。</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/10/08/0wYLbq.png" alt="next与nextLine" style="zoom: 50%;" />
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Base.First.Demo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Scanne</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//创建一个扫描器对象，用于接收键盘数据</span></span><br><span class="line">        Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="comment">//判断用户有没有输入字符串</span></span><br><span class="line">        System.out.println(<span class="string">&quot;INPUT by next:&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(scanner.hasNext())&#123;</span><br><span class="line">            <span class="comment">//使用next方式接收</span></span><br><span class="line">            String str = scanner.next();</span><br><span class="line">            System.out.println(<span class="string">&quot;OUTPUT:&quot;</span> + str);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//凡是属于IO流的类如果不关闭会一直占用资源</span></span><br><span class="line">        scanner.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="2-顺序结构"><a href="#2-顺序结构" class="headerlink" title="2.顺序结构"></a>2.顺序结构</h3><h3 id="3-选择结构"><a href="#3-选择结构" class="headerlink" title="3.选择结构"></a>3.选择结构</h3><ol>
+<li><p>if</p>
+</li>
+<li><p>switch</p>
+<blockquote>
+<p>switch语句中变量类型可以是byte, short, int, char, String(from Java SE 7)</p>
+<blockquote>
+<p>switch中string 通过哈希值来匹配</p>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<h3 id="4-循环结构"><a href="#4-循环结构" class="headerlink" title="4.循环结构"></a>4.循环结构</h3><p>==尽量避免死循环==</p>
+<ol>
+<li><p>while</p>
+<blockquote>
+<ul>
+<li>while(为假跳出){    }</li>
+<li>先判断后执行</li>
+</ul>
+</blockquote>
+</li>
+<li><p>do…while</p>
+<blockquote>
+<ul>
+<li>对比while，至少执行一次</li>
+<li>先执行后判断</li>
+</ul>
+</blockquote>
+</li>
+<li><p>for</p>
+<blockquote>
+<ul>
+<li>是支持迭代的一种通用结构，是最有效最灵活的循环结构，执行次数在执行前就已确定。</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>Idea_Tips: 100.for</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i1 = <span class="number">0</span>; i1 &lt; <span class="number">100</span>; i1++) &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<ul>
+<li><p>遍历数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] number = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> x:number)&#123;</span><br><span class="line">           System.out.println(x);</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="5-break-amp-continue"><a href="#5-break-amp-continue" class="headerlink" title="5.break &amp; continue"></a>5.break &amp; continue</h3><h3 id="6-练习"><a href="#6-练习" class="headerlink" title="6.练习"></a>6.练习</h3><h2 id="Java方法"><a href="#Java方法" class="headerlink" title="Java方法"></a>Java方法</h2><h3 id="1-什么是方法"><a href="#1-什么是方法" class="headerlink" title="1.什么是方法"></a>1.什么是方法</h3><blockquote>
+<ul>
+<li>Java方法是解决一类问题的步骤的有序组合，方法包含于类或对象中，方法在程序中被创建，在其他地方被引用。</li>
+<li>建议保证方法的原子性（一个函数，一个功能）</li>
+<li>尽量保证main();的整洁干净</li>
+</ul>
+</blockquote>
+<h3 id="2-方法的定义以及调用"><a href="#2-方法的定义以及调用" class="headerlink" title="2.方法的定义以及调用"></a>2.方法的定义以及调用</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><img src="https://s1.ax1x.com/2020/10/08/0wYXV0.png" alt="方法的定义" style="zoom:50%;" />
+
+<h4 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h4><blockquote>
+<ul>
+<li>对象名.方法名（实参列表）</li>
+<li>Java属于值传递（值传递 /  引用传递）</li>
+</ul>
+</blockquote>
+<h3 id="3-方法重载"><a href="#3-方法重载" class="headerlink" title="3.方法重载"></a>3.方法重载</h3><blockquote>
+<p>重载就是在一个类中，有相同的函数名称，但形参不同的函数，返回类型无所谓</p>
+</blockquote>
+<h3 id="4-命令行传参"><a href="#4-命令行传参" class="headerlink" title="4.命令行传参"></a>4.命令行传参</h3><blockquote>
+<p>src目录下，Java 包名 + 文件名</p>
+</blockquote>
+<h3 id="5-可变参数"><a href="#5-可变参数" class="headerlink" title="5.可变参数"></a>5.可变参数</h3><blockquote>
+<ul>
+<li>Java1.5开始支持传递同类型的可变参数给一个方法</li>
+<li>在方法声明名中，在指定参数类型后加一个省略号”…”</li>
+<li>一个方法中只能指定一个可变参数，且必须是最后一个参数。任何普通参数都必须在其之前声明。</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span>... i)</span></span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-递归"><a href="#6-递归" class="headerlink" title="6.递归"></a>6.递归</h3><img src="https://s1.ax1x.com/2020/10/08/0wYjaV.png" alt="递归" style="zoom: 50%;" />
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> Base.First.Demo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">digui</span> </span>&#123;</span><br><span class="line">    <span class="comment">//阶乘</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(f(<span class="number">3</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">f</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(n == <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> n*f(n-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>都是栈机制，避免太深的递归</p>
+</blockquote>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="1-什么是数组"><a href="#1-什么是数组" class="headerlink" title="1.什么是数组"></a>1.什么是数组</h3><img src="https://s1.ax1x.com/2020/10/08/0wtp24.png" alt="特点" style="zoom:67%;" />
+
+<h3 id="2-数组声明创建"><a href="#2-数组声明创建" class="headerlink" title="2.数组声明创建"></a>2.数组声明创建</h3><blockquote>
+<ul>
+<li>dataType[] arrayRefVar;    或    dataType arrayRefVar[]; ( 效果相同不推荐 )</li>
+<li>语法：dataType[] arrayRefVar = new dataType[arraySize];</li>
+<li>获取数组长度： arrays.length</li>
+</ul>
+</blockquote>
+<img src="https://s1.ax1x.com/2020/10/08/0wYzPU.png" alt="初始化" style="zoom:67%;" />
+
+<h3 id="3-数组使用及内存分析"><a href="#3-数组使用及内存分析" class="headerlink" title="3.数组使用及内存分析"></a>3.数组使用及内存分析</h3><h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><ul>
+<li><p>For - Each循环</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> b:a)</span><br><span class="line">&#123;</span><br><span class="line">    System.out.println(b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数组做方法入参</p>
+</li>
+<li><p>数组做返回值</p>
+</li>
+<li><p>数组变量赋值后管理同一个数组。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> []a=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;</span><br><span class="line"><span class="keyword">int</span> []b=a;	<span class="comment">//修改b，a也改变</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<blockquote>
+<p>静态初始化：创建+赋值</p>
+</blockquote>
+<img src="https://s1.ax1x.com/2020/10/08/0wYv5T.png" alt="内存分析" style="zoom:67%;" />
+
+
+
+<h3 id="4-多维数组"><a href="#4-多维数组" class="headerlink" title="4.多维数组"></a>4.多维数组</h3><h3 id="5-Arrays类"><a href="#5-Arrays类" class="headerlink" title="5.Arrays类"></a>5.Arrays类</h3><img src="https://s1.ax1x.com/2020/10/08/0wt9xJ.png" style="zoom:50%;" />
+
+
+
+<h3 id="6-稀疏数组"><a href="#6-稀疏数组" class="headerlink" title="6.稀疏数组"></a>6.稀疏数组</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/" data-id="ckg08ei7500002cq9a1sn0o4z" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="tag">基础学习</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-MD基本语法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/07/MD%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" class="article-date">
+  <time datetime="2020-10-06T16:00:00.000Z" itemprop="datePublished">2020-10-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/07/MD%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">Markdown语法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><h2 id="1-代码块"><a href="#1-代码块" class="headerlink" title="1.代码块"></a>1.代码块</h2><blockquote>
+<p>“ ```语言 “</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//cpp with hello world</span></span><br><span class="line">include&lt;iostream.h&gt;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;hello wordl&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line">print(<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-标题"><a href="#2-标题" class="headerlink" title="2.标题"></a>2.标题</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#[空格] 一级</span><br><span class="line">##[空格] 二级</span><br><span class="line">###[空格] 三级    </span><br></pre></td></tr></table></figure>
+
+<h2 id="3-字体"><a href="#3-字体" class="headerlink" title="3.字体"></a>3.字体</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//加粗</span></span><br><span class="line">**无产阶级**</span><br><span class="line"><span class="comment">//代码高亮显示</span></span><br><span class="line">==资产阶级==</span><br><span class="line"><span class="comment">//删除线</span></span><br><span class="line">~~阶级斗争~~</span><br><span class="line"><span class="comment">//斜体</span></span><br><span class="line">*中产阶级*</span><br></pre></td></tr></table></figure>
+
+<p><strong>无产阶级</strong></p>
+<p>==阶级斗争==</p>
+<p><del>资产阶级</del></p>
+<p><em>中产阶级</em></p>
+<h2 id="4-引用"><a href="#4-引用" class="headerlink" title="4.引用"></a>4.引用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引用语法</span></span><br><span class="line">&gt;作者：赵航锐</span><br><span class="line">&gt;&gt;作者：赵航锐   </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>作者：***</p>
+</blockquote>
+<blockquote>
+<p>作者</p>
+<blockquote>
+<p>作者</p>
+</blockquote>
+</blockquote>
+<h2 id="5-分割线"><a href="#5-分割线" class="headerlink" title="5.分割线"></a>5.分割线</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//分割线</span></span><br><span class="line">---</span><br><span class="line"><span class="comment">//分割线</span></span><br><span class="line">***</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="6-图片插入"><a href="#6-图片插入" class="headerlink" title="6.图片插入"></a>6.图片插入</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//在线图片/本地图片</span></span><br><span class="line">![我的图片](路径)</span><br></pre></td></tr></table></figure>
+
+<p><img src="%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98.assets/%E5%BE%AE%E8%BD%AF.PNG" alt="我的照片"></p>
+<h2 id="7-超链接"><a href="#7-超链接" class="headerlink" title="7.超链接"></a>7.超链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;超链接语法</span><br><span class="line">[我的码云](https:&#x2F;&#x2F;gitee.com&#x2F;feoar)</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://gitee.com/feoar">我的码云</a></p>
+<h2 id="8-列表"><a href="#8-列表" class="headerlink" title="8.列表"></a>8.列表</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//无序列表</span></span><br><span class="line">- 目录<span class="number">1</span></span><br><span class="line">- 目录<span class="number">2</span></span><br><span class="line">- 目录<span class="number">3</span>    </span><br><span class="line"><span class="comment">//有序列表</span></span><br><span class="line"><span class="number">1.</span>项目</span><br><span class="line"><span class="number">2.</span>项目   </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>目录1</li>
+<li>目录2</li>
+<li>目录3  <ol>
+<li>项目</li>
+<li>项目</li>
+</ol>
+</li>
+</ul>
+<h2 id="9-表格"><a href="#9-表格" class="headerlink" title="9.表格"></a>9.表格</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><blockquote>
+<p>hello blog</p>
+</blockquote>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/07/MD%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" data-id="ckfzj0ppp0000f8q9csep1afu" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="tag">基础学习</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-CSDN_MD_GRAMMAR" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/07/CSDN_MD_GRAMMAR/" class="article-date">
+  <time datetime="2020-10-06T16:00:00.000Z" itemprop="datePublished">2020-10-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/07/CSDN_MD_GRAMMAR/">Markdown form CSDN</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>@<a href="%E8%BF%99%E9%87%8C%E5%86%99%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%AE%E5%BD%95%E6%A0%87%E9%A2%98">TOC</a></p>
+<h1 id="欢迎使用Markdown编辑器"><a href="#欢迎使用Markdown编辑器" class="headerlink" title="欢迎使用Markdown编辑器"></a>欢迎使用Markdown编辑器</h1><p>你好！ 这是你第一次使用 <strong>Markdown编辑器</strong> 所展示的欢迎页。如果你想学习如何使用Markdown编辑器, 可以仔细阅读这篇文章，了解一下Markdown的基本语法知识。</p>
+<h2 id="新的改变"><a href="#新的改变" class="headerlink" title="新的改变"></a>新的改变</h2><p>我们对Markdown编辑器进行了一些功能拓展与语法支持，除了标准的Markdown编辑器功能，我们增加了如下几点新功能，帮助你用它写博客：</p>
+<ol>
+<li><strong>全新的界面设计</strong> ，将会带来全新的写作体验；</li>
+<li>在创作中心设置你喜爱的代码高亮样式，Markdown <strong>将代码片显示选择的高亮样式</strong> 进行展示；</li>
+<li>增加了 <strong>图片拖拽</strong> 功能，你可以将本地的图片直接拖拽到编辑区域直接展示；</li>
+<li>全新的 <strong>KaTeX数学公式</strong> 语法；</li>
+<li>增加了支持<strong>甘特图的mermaid语法<a href="%5Bmermaid%E8%AF%AD%E6%B3%95%E8%AF%B4%E6%98%8E%5D(https://mermaidjs.github.io/)">^1</a></strong> 功能；</li>
+<li>增加了 <strong>多屏幕编辑</strong> Markdown文章功能；</li>
+<li>增加了 <strong>焦点写作模式、预览模式、简洁写作模式、左右区域同步滚轮设置</strong> 等功能，功能按钮位于编辑区域与预览区域中间；</li>
+<li>增加了 <strong>检查列表</strong> 功能。</li>
+</ol>
+<h2 id="功能快捷键"><a href="#功能快捷键" class="headerlink" title="功能快捷键"></a>功能快捷键</h2><p>撤销：<kbd>Ctrl/Command</kbd> + <kbd>Z</kbd><br>重做：<kbd>Ctrl/Command</kbd> + <kbd>Y</kbd><br>加粗：<kbd>Ctrl/Command</kbd> + <kbd>B</kbd><br>斜体：<kbd>Ctrl/Command</kbd> + <kbd>I</kbd><br>标题：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd><br>无序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd><br>有序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd><br>检查列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd><br>插入代码：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd><br>插入链接：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd><br>插入图片：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd><br>查找：<kbd>Ctrl/Command</kbd> + <kbd>F</kbd><br>替换：<kbd>Ctrl/Command</kbd> + <kbd>G</kbd></p>
+<h2 id="合理的创建标题，有助于目录的生成"><a href="#合理的创建标题，有助于目录的生成" class="headerlink" title="合理的创建标题，有助于目录的生成"></a>合理的创建标题，有助于目录的生成</h2><p>直接输入1次<kbd>#</kbd>，并按下<kbd>space</kbd>后，将生成1级标题。<br>输入2次<kbd>#</kbd>，并按下<kbd>space</kbd>后，将生成2级标题。<br>以此类推，我们支持6级标题。有助于使用<code>TOC</code>语法后生成一个完美的目录。</p>
+<h2 id="如何改变文本的样式"><a href="#如何改变文本的样式" class="headerlink" title="如何改变文本的样式"></a>如何改变文本的样式</h2><p><em>强调文本</em> <em>强调文本</em></p>
+<p><strong>加粗文本</strong> <strong>加粗文本</strong></p>
+<p>==标记文本==</p>
+<p><del>删除文本</del></p>
+<blockquote>
+<p>引用文本</p>
+</blockquote>
+<p>H<del>2</del>O is是液体。</p>
+<p>2^10^ 运算结果是 1024.</p>
+<h2 id="插入链接与图片"><a href="#插入链接与图片" class="headerlink" title="插入链接与图片"></a>插入链接与图片</h2><p>链接: <a target="_blank" rel="noopener" href="https://www.csdn.net/">link</a>.</p>
+<p>图片: <img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw" alt="Alt"></p>
+<p>带尺寸的图片: ![Alt](<a target="_blank" rel="noopener" href="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw">https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw</a> =30x30)</p>
+<p>居中的图片: <img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw#pic_center" alt="Alt"></p>
+<p>居中并且带尺寸的图片: ![Alt](<a target="_blank" rel="noopener" href="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw#pic_center">https://imgconvert.csdnimg.cn/aHR0cHM6Ly9hdmF0YXIuY3Nkbi5uZXQvNy83L0IvMV9yYWxmX2h4MTYzY29tLmpwZw#pic_center</a> =30x30)</p>
+<p>当然，我们为了让用户更加便捷，我们增加了图片拖拽功能。</p>
+<h2 id="如何插入一段漂亮的代码片"><a href="#如何插入一段漂亮的代码片" class="headerlink" title="如何插入一段漂亮的代码片"></a>如何插入一段漂亮的代码片</h2><p>去<a target="_blank" rel="noopener" href="https://mp.csdn.net/console/configBlog">博客设置</a>页面，选择一款你喜欢的代码片高亮样式，下面展示同样高亮的 <code>代码片</code>.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// An highlighted block</span></span><br><span class="line"><span class="keyword">var</span> foo = <span class="string">&#x27;bar&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="生成一个适合你的列表"><a href="#生成一个适合你的列表" class="headerlink" title="生成一个适合你的列表"></a>生成一个适合你的列表</h2><ul>
+<li>项目<ul>
+<li>项目<ul>
+<li>项目</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>项目1</li>
+<li>项目2</li>
+<li>项目3</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"> 计划任务</li>
+<li><input checked="" disabled="" type="checkbox"> 完成任务</li>
+</ul>
+<h2 id="创建一个表格"><a href="#创建一个表格" class="headerlink" title="创建一个表格"></a>创建一个表格</h2><p>一个简单的表格是这么创建的：<br>| 项目 | Value |<br>| —- | —– |<br>| 电脑 | $1600 |<br>| 手机 | $12   |<br>| 导管 | $1    |</p>
+<h3 id="设定内容居中、居左、居右"><a href="#设定内容居中、居左、居右" class="headerlink" title="设定内容居中、居左、居右"></a>设定内容居中、居左、居右</h3><p>使用<code>:---------:</code>居中<br>使用<code>:----------</code>居左<br>使用<code>----------:</code>居右<br>|     第一列     |         第二列 | 第三列         |<br>| :————: | ————-: | :————- |<br>| 第一列文本居中 | 第二列文本居右 | 第三列文本居左 |</p>
+<h3 id="SmartyPants"><a href="#SmartyPants" class="headerlink" title="SmartyPants"></a>SmartyPants</h3><p>SmartyPants将ASCII标点字符转换为“智能”印刷标点HTML实体。例如：<br>|    TYPE   |ASCII                          |HTML<br>|—————-|——————————-|—————————–|<br>|Single backticks|<code>&#39;Isn&#39;t this fun?&#39;</code>            |’Isn’t this fun?’            |<br>|Quotes          |<code>&quot;Isn&#39;t this fun?&quot;</code>            |”Isn’t this fun?”            |<br>|Dashes          |<code>-- is en-dash, --- is em-dash</code>|– is en-dash, — is em-dash|</p>
+<h2 id="创建一个自定义列表"><a href="#创建一个自定义列表" class="headerlink" title="创建一个自定义列表"></a>创建一个自定义列表</h2><dl><dt>Markdown</dt><dd>Text-to-HTML conversion tool</dd></dl><dl><dt>Authors<br>:  John</dt><dd>Luke</dd></dl><h2 id="如何创建一个注脚"><a href="#如何创建一个注脚" class="headerlink" title="如何创建一个注脚"></a>如何创建一个注脚</h2><p>一个具有注脚的文本。<a href="%E6%B3%A8%E8%84%9A%E7%9A%84%E8%A7%A3%E9%87%8A">^2</a></p>
+<h2 id="注释也是必不可少的"><a href="#注释也是必不可少的" class="headerlink" title="注释也是必不可少的"></a>注释也是必不可少的</h2><p>Markdown将文本转换为 HTML。</p>
+<p>*[HTML]:   超文本标记语言</p>
+<h2 id="KaTeX数学公式"><a href="#KaTeX数学公式" class="headerlink" title="KaTeX数学公式"></a>KaTeX数学公式</h2><p>您可以使用渲染LaTeX数学表达式 <a target="_blank" rel="noopener" href="https://khan.github.io/KaTeX/">KaTeX</a>:</p>
+<p>Gamma公式展示 $\Gamma(n) = (n-1)!\quad\forall<br>n\in\mathbb N$ 是通过欧拉积分</p>
+<p>$$<br>\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt,.<br>$$</p>
+<blockquote>
+<p>你可以找到更多关于的信息 <strong>LaTeX</strong> 数学表达式<a target="_blank" rel="noopener" href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">here</a>.</p>
+</blockquote>
+<h2 id="新的甘特图功能，丰富你的文章"><a href="#新的甘特图功能，丰富你的文章" class="headerlink" title="新的甘特图功能，丰富你的文章"></a>新的甘特图功能，丰富你的文章</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title Adding GANTT diagram functionality to mermaid</span><br><span class="line">        section 现有任务</span><br><span class="line">        已完成               :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        进行中               :active,  des2, 2014-01-09, 3d</span><br><span class="line">        计划一               :         des3, after des2, 5d</span><br><span class="line">        计划二               :         des4, after des3, 5d</span><br></pre></td></tr></table></figure>
+<ul>
+<li>关于 <strong>甘特图</strong> 语法，参考 <a target="_blank" rel="noopener" href="https://mermaidjs.github.io/">这儿</a>,</li>
+</ul>
+<h2 id="UML-图表"><a href="#UML-图表" class="headerlink" title="UML 图表"></a>UML 图表</h2><p>可以使用UML图表进行渲染。 <a target="_blank" rel="noopener" href="https://mermaidjs.github.io/">Mermaid</a>. 例如下面产生的一个序列图：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">张三 -&gt;&gt; 李四: 你好！李四, 最近怎么样?</span><br><span class="line">李四--&gt;&gt;王五: 你最近怎么样，王五？</span><br><span class="line">李四--x 张三: 我很好，谢谢!</span><br><span class="line">李四-x 王五: 我很好，谢谢!</span><br><span class="line">Note right of 王五: 李四想了很长时间, 文字太长了&lt;br&#x2F;&gt;不适合放在一行.</span><br><span class="line"></span><br><span class="line">李四--&gt;&gt;张三: 打量着王五...</span><br><span class="line">张三-&gt;&gt;王五: 很好... 王五, 你怎么样?</span><br></pre></td></tr></table></figure>
+
+<p>这将产生一个流程图。:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[长方形] -- 链接 --&gt; B((圆))</span><br><span class="line">A --&gt; C(圆角长方形)</span><br><span class="line">B --&gt; D&#123;菱形&#125;</span><br><span class="line">C --&gt; D</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>关于 <strong>Mermaid</strong> 语法，参考 <a target="_blank" rel="noopener" href="https://mermaidjs.github.io/">这儿</a>,</li>
+</ul>
+<h2 id="FLowchart流程图"><a href="#FLowchart流程图" class="headerlink" title="FLowchart流程图"></a>FLowchart流程图</h2><p>我们依旧会支持flowchart的流程图：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">flowchat</span><br><span class="line">st&#x3D;&gt;start: 开始</span><br><span class="line">e&#x3D;&gt;end: 结束</span><br><span class="line">op&#x3D;&gt;operation: 我的操作</span><br><span class="line">cond&#x3D;&gt;condition: 确认？</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>关于 <strong>Flowchart流程图</strong> 语法，参考 <a target="_blank" rel="noopener" href="http://adrai.github.io/flowchart.js/">这儿</a>.</li>
+</ul>
+<h2 id="导出与导入"><a href="#导出与导入" class="headerlink" title="导出与导入"></a>导出与导入</h2><h3 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h3><p>如果你想尝试使用此编辑器, 你可以在此篇文章任意编辑。当你完成了一篇文章的写作, 在上方工具栏找到 <strong>文章导出</strong> ，生成一个.md文件或者.html文件进行本地保存。</p>
+<h3 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h3><p>如果你想加载一篇你写过的.md文件，在上方工具栏可以选择导入功能进行对应扩展名的文件导入，<br>继续你的创作。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/07/CSDN_MD_GRAMMAR/" data-id="ckfzju0yc00006kq9ghonekit" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BC%95%E7%94%A8%E5%A4%87%E5%BF%98/" rel="tag">引用备忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-汇编语言" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/07/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" class="article-date">
+  <time datetime="2020-10-06T16:00:00.000Z" itemprop="datePublished">2020-10-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/07/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/">汇编语言</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="汇编语言"><a href="#汇编语言" class="headerlink" title="汇编语言"></a>汇编语言</h1><h2 id="1-汇编指令（核心）"><a href="#1-汇编指令（核心）" class="headerlink" title="1.汇编指令（核心）"></a>1.汇编指令（核心）</h2><blockquote>
+<p>机器码的助记符，有对应的机器码</p>
+</blockquote>
+<h2 id="2-伪指令"><a href="#2-伪指令" class="headerlink" title="2.伪指令"></a>2.伪指令</h2><blockquote>
+<p>没有对应的机器码，由编译器执行，计算机并不执行</p>
+</blockquote>
+<h2 id="3-其他符号"><a href="#3-其他符号" class="headerlink" title="3.其他符号"></a>3.其他符号</h2><blockquote>
+<p>如+, -, *, /, 等，由编译器识别，没有对应机器码。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/07/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/" data-id="ckfzju0ym00016kq9dnxc0vxm" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="tag">基础学习</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-读书笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-10-06T16:00:00.000Z" itemprop="datePublished">2020-10-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="读书笔记"><a href="#读书笔记" class="headerlink" title="读书笔记"></a>读书笔记</h1><h2 id="《毛泽东文选》"><a href="#《毛泽东文选》" class="headerlink" title="《毛泽东文选》"></a>《毛泽东文选》</h2><p>谁是我们的敌人?谁是我们的朋友?这个问题是革命的首要问题。中国过去一切革命斗争成效甚少，其基本原因就是因为不能团结真正的朋友，以攻击真正的敌人。革命党是群众的向导，在革命中未有革命党领错了路而革命不失败的。我们的革命要有不领错路和一定成功的把握，不可不注意团结我们的真正的朋友，以攻击我们的真正的敌人。我们要分辨真正的敌友，不可不将中国社会各阶级的经济地位及其对于革命的态度，作一个大概的分析。</p>
+<blockquote>
+<p>开篇点明了革命的关键问题，我们的敌人是谁，要革谁的命，谁将是我们的同志，谁又是潜在的敌人，谁又是潜在的队友；都需要搞明白弄清楚才能有以此为基础之一的战略制定。我想起了孟子的一篇文章中的话“得道者多助，失道者寡助。寡助之至，亲戚畔之。多助之至，天下顺之。以天下之所顺，攻亲戚之所畔，故君子有不战，战必胜矣。 ”，<code> 意思是能行“仁政”的君王，帮助支持他的人就多，不施行“仁政”的君主，支持帮助他的人就少。支持帮助他的人少到了极点，连内外亲属也会背叛他；支持帮助他的人多到了极点，天下所有人都会归顺他。凭着天下人都归顺他的条件，去攻打那连亲属都反对背叛的君王，君子要么不战斗，（如果）战斗就一定会取得胜利。</code> </p>
+</blockquote>
+<p>​        地主阶级和买办阶级。在经济落后的半殖民地的中国，地主阶级和买办阶级完全是国际资产阶级的附庸，其生存和发展，是附属于帝国主义的。</p>
+<p>　　中产阶级。这个阶级代表中国城乡资本主义的生产关系。</p>
+<p>　　小资产阶级。如自耕农，手工业主，小知识阶层——学生界、中小学教员、小员司、小事务员、小律师，小商人等都属于这一类。</p>
+<p>　　半无产阶级。此处所谓半无产阶级，包含：绝大部分半自耕农，贫农，小手工业者，店员，小贩等五种。</p>
+<p>　　无产阶级。现代工业无产阶级约二百万人。所谓农村无产阶级，是指长工、月工、零工等雇农而言。</p>
+<p>　　此外，还有数量不小的游民无产者，为失了土地的农民和失了工作机会的手工业工人。</p>
+<p>　　综上所述，可知一切勾结帝国主义的军阀、官僚、买办阶级、大地主阶级以及附属于他们的一部分反动知识界，是我们的敌人。工业无产阶级是我们革命的领导力量。一切半无产阶级、小资产阶级，是我们最接近的朋友。那动摇不定的中产阶级，其右翼可能是我们的敌人，其左翼可能是我们的朋友——但我们要时常提防他们，不要让他们扰乱了我们的阵线。</p>
+<blockquote>
+<p>这几段我有所删减，几段文字精准的抛析了当代中国社会的人员阶级结构以及比重。结合第一段，找到了革命的主力军为日后的胜利找到了同盟军。在《江泽民在庆祝建档八十周年大会上的讲话》同样也指明了中国特色社会主义事业的建设者问题，不同历史阶段的两个创造性解答，体现了我们党从现实国情，，党情和外面的世情触发，在马克思主义立场，观点，方法指导下解放思想，实事求是，团结社会各阶层，巩固自己的社会基础，扩大自己的群基础，不断提高党的社会影响力，带领革命斗争多的胜利，带领中国特色社会主义建设取得胜利的远见卓识。为并且随着时代发展，依然适用于现代社会的阶级人员构成。</p>
+</blockquote>
+<p>一国之内，在四围白色政权的包围中，有一小块或若干小块红色政权的区域长期地存在，这是世界各国从来没有的事。这种奇事的发生，有其独特的原因。而其存在和发展，亦必有相当的条件。第一，它的发生不能在任何帝国主义的国家，也不能在任何帝国主义直接统治的殖民地[7]，必然是在帝国主义间接统治的经济落后的半殖民地的中国。因为这种奇怪现象必定伴着另外一件奇怪现象，那就是白色政权之间的战争。帝国主义和国内买办豪绅阶级支持着的各派新旧军阀，从民国元年以来，相互间进行着继续不断的战争，这是半殖民地中国的特征之一。不但全世界帝国主义国家没有一国有这种现象，就是帝国主义直接统治的殖民地也没有一处有这种现象，仅仅帝国主义间接统治的中国这样的国家才有这种现象。这种现象产生的原因有两种，即地方的农业经济(不是统一的资本主义经济)和帝国主义划分势力范围的分裂剥削政策。因为有了白色政权间的长期的分裂和战争，便给了一种条件，使一小块或若干小块的共产党领导的红色区域，能够在四围白色政权包围的中间发生和坚持下来。湘赣边界的割据，就是这许多小块中间的一小块。有些同志在困难和危急的时候，往往怀疑这样的红色政权的存在，而发生悲观的情绪。这是没有找出这种红色政权所以发生和存在的正确的解释的缘故。我们只须知道中国白色政权的分裂和战争是继续不断的，则红色政权的发生、存在并且日益发展，便是无疑的了。第二，中国红色政权首先发生和能够长期地存在的地方，不是那种并未经过民主革命影响的地方，例如四川、贵州、云南及北方各省，而是在一九二六和一九二七两年资产阶级民主革命过程中工农兵士群众曾经大大地起来过的地方，例如湖南、广东、湖北、江西等省。这些省份的许多地方，曾经有过很广大的工会和农民协会的组织，有过工农阶级对地主豪绅阶级和资产阶级的许多经济的政治的斗争。所以广州产生过三天的城市民众政权，而海陆丰、湘东、湘南、湘赣边界、湖北的黄安等地都有过农民的割据[8]。至于此刻的红军，也是由经过民主的政治训练和接受过工农群众影响的国民革命军中分化出来的。那些毫未经过民主的政治训练、毫未接受过工农影响的军队，例如阎锡山、张作霖的军队，此时便决然不能分化出可以造成红军的成分来。第三，小地方民众政权之能否长期地存在，则决定于全国革命形势是否向前发展这一个条件。全国革命形势是向前发展的，则小块红色区域的长期存在，不但没有疑义，而且必然地要作为取得全国政权的许多力量中间的一个力量。全国革命形势若不是继续地向前发展，而有一个比较长期的停顿，则小块红色区域的长期存在是不可能的。现在中国革命形势是跟着国内买办豪绅阶级和国际资产阶级的继续的分裂和战争，而继续地向前发展的。所以，不但小块红色区域的长期存在没有疑义，而且这些红色区域将继续发展，日渐接近于全国政权的取得。第四，相当力量的正式红军的存在，是红色政权存在的必要条件。若只有地方性质的赤卫队[9]而没有正式的红军，则只能对付挨户团[10]，而不能对付正式的白色军队。所以虽有很好的工农群众，若没有相当力量的正式武装，便决然不能造成割据局面，更不能造成长期的和日益发展的割据局面。所以“工农武装割据”的思想，是共产党和割据地方的工农群众必须充分具备的一个重要的思想。第五，红色政权的长期的存在并且发展，除了上述条件之外，还须有一个要紧的条件，就是共产党组织的有力量和它的政策的不错误。  </p>
+<blockquote>
+<p>毛泽东写这篇文章时正值第二次革命战争时期，由毛泽东同志所领导的秋收起义和周恩来、朱德等同志所领导的“八．一”南昌起义两支队伍会师井冈山，建立了我党领导的第一个革命根据地。从此，在半封建半殖民地的旧中国的土地上有了属于人民自己的红色政权。它的诞生，使祖祖辈辈受剥削、受压迫的劳动人民看到了希望，看到了曙光，因为共产党所领导的红色政权是人民自己的政权，是为广大劳苦大众谋利益的。在此之前，由于以陈独秀为代表的右倾机会主义者，在第一次国共合作时，没有坚决执行无产阶级自己的领导权，一贯向以蒋介石为代表的国民党右派势力妥协，结果被大地主、大资产阶级篡夺了领导权，以反革命代替了革命。正如毛泽东同志在文章中所提到的“中国迫切需要一个资产阶级的民主革命，这个革命必须由无产阶级领导才能完成。事实也正是这样，1927年蒋介石悍然发动的“四．一二”反革命政变就是如此，血的教训告诉我们，中国共产党如果不掌握自己的革命武装，建立属于自己的红色政权，就不能取得革命的最后胜利</p>
+</blockquote>
+<p>　本本主义的社会科学研究法也同样是最危险的，甚至可能走上反革命的道路，中国有许多专门从书本上讨生活的从事社会科学研究的共产党员，不是一批一批地成了反革命吗?就是明显的证据。我们说马克思主义是对的，决不是因为马克思这个人是什么“先哲”，而是因为他的理论，在我们的实践中，在我们的斗争中，证明了是对的。我们的斗争需要马克思主义。我们欢迎这个理论，丝毫不存什么“先哲”一类的形式的甚至神秘的念头在里面。读过马克思主义“本本”的许多人，成了革命叛徒，那些不识字的工人常常能够很好地掌握马克思主义。马克思主义的“本本”是要学习的，但是必须同我国的实际情况相结合。我们需要“本本”，但是一定要纠正脱离实际情况的本本主义。</p>
+<blockquote>
+<p>本本主义即教条主义, 该文从认识论的高度阐明调查研究的重要性，提出了传之后世的“没有调查,就没有发言权”、“中国革命斗争的胜利要靠中国同志了解中国情况”等著名论断，是对马克思主义认识论和历史唯物主义的丰富和发展，蕴含着实事求是、群众路线、独立自主的基本思想，是中国共产党思想路线的雏形。明确表达了实事求是、群众路线、独立自主的基本观点，阐明了中国的马克思主义者对待马克思主义的态度。毛泽东在《反对本本主义》中倡导的实事求是、群众路线、独立自主的精神，对于今日中国落实“四个全面”仍具有重要理论意义与实践价值。</p>
+</blockquote>
+<h2 id="邓小平文选"><a href="#邓小平文选" class="headerlink" title="邓小平文选"></a>邓小平文选</h2><p>帝国主义的各种花样直到封锁，其目的在于迫我就范，我们的斗争也在于迫使帝国主义就范。我们绝不会就帝国主义之范，而一个多月的经验看出，帝国主义就我之范亦非易事。这一时期双方斗争实际上都是试探的性质，直到英美摊出封锁的牌。封锁，在目前说来，虽增加我们不少困难，但对我仍属有利，即使不封锁，我们许多困难也是不能解决的。但封锁太久了，对我则是极不利的。打破封锁之道，毛主席强调从军事上迅速占领两广云贵川康青宁诸省，尽量求得早日占领沿海各岛及台湾。同时我们提出的外交政策的一面倒，愈早表现于行动则对我愈有利（毛主席说，这样是主动的倒，免得将来被动的倒）；内部政策强调认真的从自力更生打算，不但叫，而且认真着手做（毛主席说，更主要的从长远的新民主主义建设着眼来提出这个问题），毛主席说这两条很好，与中央精神一致。我们这样做，即占领全国、一面倒和自力更生，不但可以立于坚固的基础之上，而且才有可能迫使帝国主义就我之范。</p>
+<blockquote>
+<p>在当前疫情与美帝国主义为首的西方老牌资本主义国家对中国的围追堵截，技术封锁，贸易壁垒的大背景下，邓小平指出了我们绝不投降的方针，清晰的分析的当时的国际形式对国内的影响恰如今日，今天面对技术的封锁与列强的欺压。我国保持着比较强硬的外交政策。经济全球化的今天，国内有不少量的技术依赖于外国，这次收到技术封锁我们只能自力更生，没有就从零开始追赶。美国政府的欺压只会激发中国人的斗志，相信在未来，外国发达资本主义国家对于中国的技术优势只会越来越少甚至被反超。中国的国际地位将会极大的提升，同时配合中国提出的一系列贸易政策以中国为中心的三级贸易圈将会逐渐成熟，国内的低端产业将会如现在一样逐渐向发展中国家迁移，国内的产业将会进一步升级到高端产业。届时，中国将会收割以中国为中心的三级贸易圈的财富，国民的生活水平会逐步提高，这是建立在国内财富分配进一步优化的前提下的。如果如今天一样继续内卷下去，即使可以收割世界的财富，国内中产阶级无产阶级的生活质量有可能继续下降。</p>
+</blockquote>
+<h2 id="习近平讲话系列"><a href="#习近平讲话系列" class="headerlink" title="习近平讲话系列"></a>习近平讲话系列</h2><p>改革开放以来，我们党始终高度重视正确处理改革发展稳定关系，始终把维护国家安全和社会安定作为党和国家的一项基础性工作。我们保持了我国社会大局稳定，为改革开放和社会主义现代化建设营造了良好环境。“安而不忘危，存而不忘亡，治而不忘乱。”同时，必须清醒地看到，新形势下我国国家安全和社会安定面临的威胁和挑战增多，特别是各种威胁和挑战联动效应明显。我们必须保持清醒头脑、强化底线思维，有效防范、管理、处理国家安全风险，有力应对、处置、化解社会安定挑战。</p>
+<p>要加强新形势下反分裂斗争，高举各民族大团结的旗帜，坚持各民族共同团结奋斗、共同繁荣发展的主题，深入开展民族团结宣传教育，打牢民族团结的思想基础，最大限度团结各族群众。要加强基层组织和基层政权建设，多做深入细致的群众工作。要正确把握党的民族、宗教政策，及时妥善解决影响民族团结的矛盾纠纷，坚决遏制和打击境内外敌对势力利用民族问题进行的分裂、渗透、破坏活动。</p>
+<blockquote>
+<p>国家安全是国家生存和发展最基本最重要的前提。自2014年香港“非法占中”以来，港独思潮频频在香港社会抬头。一些分离分子企图通过对民族自决的歪曲，以全民公投的形式谋求“香港独立”；也常有独派借言论自由的名义大肆宣传港独思潮。港独思潮作为一种极端本土主义，若任其自由发展而不采取任何有效措施，必然给香港和内地社会繁荣与稳定带来不可忽略的破坏。在其嚣张的气焰背后不难发现有境外反华势力的支持。这只是众多案例之一，显而易见我国国家安全和社会安定面临的威胁和挑战增多，习主席的讲话对于国家安全问题做了新的概括，顺应时代发展的潮流，回应了广大人民的关切，有十分重要的指导意义。</p>
+</blockquote>
+<p>维护国家安全，必须做好维护社会和谐稳定工作，做好预防化解社会矛盾工作，从制度、机制、政策、工作上积极推动社会矛盾预防化解工作。要增强发展的全面性、协调性、可持续性，加强保障和改善民生工作，从源头上预防和减少社会矛盾的产生。要以促进社会公平正义、增进人民福祉为出发点和落脚点，加大协调各方面利益关系的力度，推动发展成果更多更公平惠及全体人民。要完善和落实维护群众合法权益的体制机制，完善和落实社会稳定风险评估机制，预防和减少利益冲突。要全面推进依法治国，更好维护人民群众合法权益。对各类社会矛盾，要引导群众通过法律程序、运用法律手段解决，推动形成办事依法、遇事找法、解决问题用法、化解矛盾靠法的良好环境。</p>
+<blockquote>
+<p>看到社会层面的指导方针我感慨万千，中国特色社会主义的道路还是很漫长和曲折的。必须要有党的正确的具有前瞻性和胆魄的指导以及人民群众的努力建设才能走下去。</p>
+</blockquote>
+<p>我们党作为百年大党，如何永葆先进性和纯洁性、永葆青春活力，如何永远得到人民拥护和支持，如何实现长期执政，是我们必须回答好、解决好的一个根本性问题。我们党要求全党同志不忘初心、牢记使命，就是要提醒全党同志，党的初心和使命是党的性质宗旨、理想信念、奋斗目标的集中体现，越是长期执政，越不能丢掉马克思主义政党的本色，越不能忘记党的初心使命，越不能丧失自我革命精神。</p>
+<p>我们党的初心和使命是建立在马克思主义科学理论基础之上的。马克思、恩格斯在《共产党宣言》中庄严宣告：“过去的一切运动都是少数人的，或者为少数人谋利益的运动。无产阶级的运动是绝大多数人的，为绝大多数人谋利益的独立的运动。”我们党是用马克思主义武装起来的政党，始终把为中国人民谋幸福、为中华民族谋复兴作为自己的初心和使命，并一以贯之体现到党的全部奋斗之中。忘记这个初心和使命，党就会改变性质、改变颜色，就会失去人民、失去未来。只要我们党牢牢坚持立党为公、执政为民，牢牢坚持为中国人民谋幸福、为中华民族谋复兴，不断检视自己，不掩饰缺点，不文过饰非，坚决同一切弱化党的先进性和纯洁性、危害党的肌体健康的现象作斗争，就一定能够始终立于不败之地。</p>
+<blockquote>
+<p>有这样能自省的，始终为人民着想，为人民谋幸福，坚定维护主权，国家利益和人民利益的政党领导，我觉得中国人民是十分幸福的，放眼全世界，有几个国家的政府是这样的呢？这就是人民当家作主，这就是社会主义的优越性之一吧，没有西方资本主义国家的功利，是有人情味的政党。希望我们党能坚守初心，不被资本腐蚀，能继续努力为人民谋幸福，建设更美好的国家。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" data-id="ckfzju0yr00056kq9begl40dl" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/" rel="tag">课后作业</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/06/hello-world/" class="article-date">
+  <time datetime="2020-10-06T15:48:52.542Z" itemprop="datePublished">2020-10-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/06/hello-world/">Hello Blog</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><blockquote>
+<p>hello blog</p>
+</blockquote>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/06/hello-world/" data-id="ckfzj0pq30001f8q90esj304h" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="tag">基础学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%95%E7%94%A8%E5%A4%87%E5%BF%98/" rel="tag">引用备忘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/" rel="tag">课后作业</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" style="font-size: 20px;">基础学习</a> <a href="/tags/%E5%BC%95%E7%94%A8%E5%A4%87%E5%BF%98/" style="font-size: 10px;">引用备忘</a> <a href="/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/" style="font-size: 10px;">课后作业</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/">Java学习</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/07/MD%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">Markdown语法</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/07/CSDN_MD_GRAMMAR/">Markdown form CSDN</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/07/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/">汇编语言</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 FeOAr<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
