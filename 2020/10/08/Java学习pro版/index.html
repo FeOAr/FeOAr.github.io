@@ -1,109 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
 
-  
-  <title>Java学习 | EsNaSc</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java学习pro版Java基础语法注释，标识符，关键字Java注释 单行注释  多行注释  文档注释    Java标识符关键字  标识符 类名，变量名，方法名都称为标识符。  数据类型 强类型语言   Java数据类型有两类 基本类型（primitive type） 引用类型（reference type）       boolean    (true&#x2F;false&lt;—defaule) 1">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Java学习">
-<meta property="og:url" content="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/index.html">
-<meta property="og:site_name" content="EsNaSc">
-<meta property="og:description" content="Java学习pro版Java基础语法注释，标识符，关键字Java注释 单行注释  多行注释  文档注释    Java标识符关键字  标识符 类名，变量名，方法名都称为标识符。  数据类型 强类型语言   Java数据类型有两类 基本类型（primitive type） 引用类型（reference type）       boolean    (true&#x2F;false&lt;—defaule) 1">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88.assets/0wYo8g.png">
-<meta property="og:image" content="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/Java学习pro版.assets/0wY7vj.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYbKs.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYT2Q.png">
-<meta property="og:image" content="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88.assets/QQ%E6%88%AA%E5%9B%BE20201006135418.png">
-<meta property="og:image" content="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88.assets/0wYIPS.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYLbq.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYXV0.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYjaV.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wtp24.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYzPU.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYv5T.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wt9xJ.png">
-<meta property="article:published_time" content="2020-10-07T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-08T02:58:05.260Z">
-<meta property="article:author" content="FeOAr">
-<meta property="article:tag" content="基础学习">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88.assets/0wYo8g.png">
-  
-    <link rel="alternate" href="/atom.xml" title="EsNaSc" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">EsNaSc</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
         
-          <a class="main-nav-link" href="/">Home</a>
+            Java学习 | EsNaSc
         
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/FeOAr/FeOAr.github.io.git"></form>
-      </div>
-    </div>
+    </title>
+    
+    
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="EsNaSc" type="application/atom+xml">
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">EsNaSc</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
   </div>
 </header>
-      <div class="outer">
-        <section id="main"><article id="post-Java学习pro版" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/" class="article-date">
-  <time datetime="2020-10-07T16:00:00.000Z" itemprop="datePublished">2020-10-08</time>
-</a>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-2">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/tools/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-tools"></i>
+                    </div>
+                    <div class="mdui-list-item-content">工具箱</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-2">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">FeOAr</div>
+            <div class="sidebar-description">personal blog of learning</div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="mailto:xxx@xxx.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a target="_blank" rel="noopener" href="https://garybear.cn/hexo-theme-meadow/" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/">Java学习</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2020-10-08
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2020-10-08
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
     
   </div>
-  <div class="article-inner">
+</div>   
     
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Java学习
-    </h1>
-  
 
-      </header>
+
+
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Java学习pro版"><a href="#Java学习pro版" class="headerlink" title="Java学习pro版"></a>Java学习pro版</h1><h2 id="Java基础语法"><a href="#Java基础语法" class="headerlink" title="Java基础语法"></a>Java基础语法</h2><h3 id="注释，标识符，关键字"><a href="#注释，标识符，关键字" class="headerlink" title="注释，标识符，关键字"></a>注释，标识符，关键字</h3><h4 id="Java注释"><a href="#Java注释" class="headerlink" title="Java注释"></a>Java注释</h4><ul>
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=Java学习&url=https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/&pic=https://github.com/FeOAr/FeOAr.github.io.git/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=Java学习&url=https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/&via=FeOAr" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/&title=Java学习" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=EsNaSc&title=Java学习&summary=personal blog of learning&pics=https://github.com/FeOAr/FeOAr.github.io.git/null&url=https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/&text=Java学习" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/ >基础学习</a>
+      </i>
+    
+  </div>
+
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h1 id="Java学习pro版"><a href="#Java学习pro版" class="headerlink" title="Java学习pro版"></a>Java学习pro版</h1><h2 id="Java基础语法"><a href="#Java基础语法" class="headerlink" title="Java基础语法"></a>Java基础语法</h2><h3 id="注释，标识符，关键字"><a href="#注释，标识符，关键字" class="headerlink" title="注释，标识符，关键字"></a>注释，标识符，关键字</h3><h4 id="Java注释"><a href="#Java注释" class="headerlink" title="Java注释"></a>Java注释</h4><ul>
 <li><p>单行注释</p>
 </li>
 <li><p>多行注释</p>
@@ -360,137 +554,150 @@
 
 
 <h3 id="6-稀疏数组"><a href="#6-稀疏数组" class="headerlink" title="6.稀疏数组"></a>6.稀疏数组</h3>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/" data-id="ckg08ei7500002cq9a1sn0o4z" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="tag">基础学习</a></li></ul>
-
-    </footer>
   </div>
+  <!--文末结束语-->
   
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
     
-<nav id="article-nav">
-  
-  
-    <a href="/2020/10/07/MD%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Markdown语法</div>
-    </a>
-  
-</nav>
-
-  
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2020/10/07/MD%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
+        <span>Markdown语法</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
 </article>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" rel="tag">基础学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BC%95%E7%94%A8%E5%A4%87%E5%BF%98/" rel="tag">引用备忘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/" rel="tag">课后作业</a></li></ul>
-    </div>
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java%E5%AD%A6%E4%B9%A0pro%E7%89%88"><span class="toc-number">1.</span> <span class="toc-text">Java学习pro版</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">Java基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A%EF%BC%8C%E6%A0%87%E8%AF%86%E7%AC%A6%EF%BC%8C%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.1.1.</span> <span class="toc-text">注释，标识符，关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Java%E6%B3%A8%E9%87%8A"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">Java注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Java%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">Java标识符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.1.1.2.1.</span> <span class="toc-text">关键字</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="toc-number">1.1.1.2.2.</span> <span class="toc-text">标识符</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.2.</span> <span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.1.3.</span> <span class="toc-text">类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F"><span class="toc-number">1.1.4.</span> <span class="toc-text">变量常量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.1.5.</span> <span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%85%E6%9C%BA%E5%88%B6%EF%BC%8CJavaDoc"><span class="toc-number">1.1.6.</span> <span class="toc-text">包机制，JavaDoc</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%85%E6%9C%BA%E5%88%B6"><span class="toc-number">1.1.6.0.1.</span> <span class="toc-text">包机制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#JavaDoc"><span class="toc-number">1.1.6.0.2.</span> <span class="toc-text">JavaDoc</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-number">1.2.</span> <span class="toc-text">Java流程控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%94%A8%E6%88%B7%E4%BA%A4%E4%BA%92Scanner"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.用户交互Scanner</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.顺序结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.选择结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.4.</span> <span class="toc-text">4.循环结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-break-amp-continue"><span class="toc-number">1.2.5.</span> <span class="toc-text">5.break &amp; continue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%BB%83%E4%B9%A0"><span class="toc-number">1.2.6.</span> <span class="toc-text">6.练习</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text">Java方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.什么是方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%96%B9%E6%B3%95%E7%9A%84%E5%AE%9A%E4%B9%89%E4%BB%A5%E5%8F%8A%E8%B0%83%E7%94%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.方法的定义以及调用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B0%83%E7%94%A8"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">调用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.方法重载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BC%A0%E5%8F%82"><span class="toc-number">1.3.4.</span> <span class="toc-text">4.命令行传参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0"><span class="toc-number">1.3.5.</span> <span class="toc-text">5.可变参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E9%80%92%E5%BD%92"><span class="toc-number">1.3.6.</span> <span class="toc-text">6.递归</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.1.</span> <span class="toc-text">1.什么是数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%95%B0%E7%BB%84%E5%A3%B0%E6%98%8E%E5%88%9B%E5%BB%BA"><span class="toc-number">1.4.2.</span> <span class="toc-text">2.数组声明创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%95%B0%E7%BB%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.数组使用及内存分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">1.4.3.1.</span> <span class="toc-text">使用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.4.</span> <span class="toc-text">4.多维数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Arrays%E7%B1%BB"><span class="toc-number">1.4.5.</span> <span class="toc-text">5.Arrays类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.6.</span> <span class="toc-text">6.稀疏数组</span></a></li></ol></li></ol></li></ol>
+      </li>
+    </ul>
   </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" style="font-size: 20px;">基础学习</a> <a href="/tags/%E5%BC%95%E7%94%A8%E5%A4%87%E5%BF%98/" style="font-size: 10px;">引用备忘</a> <a href="/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/" style="font-size: 10px;">课后作业</a>
-    </div>
-  </div>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
         
-          <li>
-            <a href="/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/">Java学习</a>
-          </li>
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
         
-          <li>
-            <a href="/2020/10/07/MD%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">Markdown语法</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/07/CSDN_MD_GRAMMAR/">Markdown form CSDN</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/07/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/">汇编语言</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/07/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 FeOAr<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
     </div>
-  </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2020 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        FeOAr
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
   
-    <a href="/" class="mobile-nav-link">Home</a>
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
   
-</nav>
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
     
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/js/mdui.min.v1.0.0.js"></script>
 
 
 
 
-<script src="/js/script.js"></script>
+<script src="/js/meadow.js"></script>
 
-
-
-
-  </div>
 </body>
-</html>
+</html >
