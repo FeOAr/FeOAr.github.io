@@ -34,14 +34,14 @@
 <meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYqrn.png">
 <meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYIPS.png">
 <meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYLbq.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYXV0.png">
 <meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYjaV.png">
 <meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wtp24.png">
 <meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYzPU.png">
 <meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wYv5T.png">
-<meta property="og:image" content="https://s1.ax1x.com/2020/10/08/0wt9xJ.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0fE4zD.png">
+<meta property="og:image" content="https://s1.ax1x.com/2020/10/13/0feNdA.png">
 <meta property="article:published_time" content="2020-10-07T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-10-12T14:39:08.302Z">
+<meta property="article:modified_time" content="2020-10-13T04:49:09.843Z">
 <meta property="article:author" content="FeOAr">
 <meta property="article:tag" content="基础学习">
 <meta name="twitter:card" content="summary">
@@ -300,7 +300,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">3.4k</span>阅读时长: <span class="post-count reading-time">13 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">4.1k</span>阅读时长: <span class="post-count reading-time">15 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -525,7 +525,7 @@ height:50vh;
 <li>类名：首字母小写和驼峰原则</li>
 <li>方法名：首字母小写和驼峰原则</li>
 </ul>
-<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><img src="https://s1.ax1x.com/2020/10/08/0wYT2Q.png" alt="运算符" style="zoom: 67%;" />
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><img src="https://s1.ax1x.com/2020/10/08/0wYT2Q.png" alt="运算符" style="zoom: 50%;" />
 
 
 
@@ -619,7 +619,17 @@ height:50vh;
 <li>尽量保证main();的整洁干净</li>
 </ul>
 </blockquote>
-<h3 id="2-方法的定义以及调用"><a href="#2-方法的定义以及调用" class="headerlink" title="2.方法的定义以及调用"></a>2.方法的定义以及调用</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><img src="https://s1.ax1x.com/2020/10/08/0wYXV0.png" alt="方法的定义" style="zoom:50%;" />
+<h3 id="2-方法的定义以及调用"><a href="#2-方法的定义以及调用" class="headerlink" title="2.方法的定义以及调用"></a>2.方法的定义以及调用</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>方法即函数，是一段<strong>用来完成特定功能的代码片段</strong>，一般情况下定义一个方法包含：<ol>
+<li>修饰符：可选</li>
+<li>返回值类型</li>
+<li>方法名</li>
+<li>参数类型</li>
+<li>方法体</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">修饰符 返回值类型 方法名（参数类型 参数名）&#123;</span><br><span class="line">    ...</span><br><span class="line">    方法体</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">return</span> 返回值;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h4 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h4><blockquote>
 <ul>
@@ -681,8 +691,17 @@ height:50vh;
 
 
 
-<h3 id="4-多维数组"><a href="#4-多维数组" class="headerlink" title="4.多维数组"></a>4.多维数组</h3><h3 id="5-Arrays类"><a href="#5-Arrays类" class="headerlink" title="5.Arrays类"></a>5.Arrays类</h3><img src="https://s1.ax1x.com/2020/10/08/0wt9xJ.png" style="zoom:50%;" />
-
+<h3 id="4-多维数组"><a href="#4-多维数组" class="headerlink" title="4.多维数组"></a>4.多维数组</h3><h3 id="5-Arrays类"><a href="#5-Arrays类" class="headerlink" title="5.Arrays类"></a>5.Arrays类</h3><ul>
+<li>数组的工具类java.util.Arrays，帮助对数组进行一些基本操作</li>
+<li>Arrays类中的方法都是static修饰的静态方法，在使用时可以直接使用类名进行调用，”不强制用”使用对象来调用</li>
+<li>常用方法：<ol>
+<li>给数组赋值：fill</li>
+<li>给数组排序：sort，升序</li>
+<li>比较数组：通过equals比较数组中元素值是否相等</li>
+<li>查找数组元素：通过binarySearch方法能对排序好的数组二分法查找操作</li>
+</ol>
+</li>
+</ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//示例</span></span><br><span class="line"><span class="keyword">package</span> Base.First.Demo;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">digui</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> []a=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">        System.out.println(Arrays.toString(a));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
@@ -895,7 +914,71 @@ height:50vh;
 </blockquote>
 </li>
 </ul>
-<h3 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h3>
+<h3 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h3><ul>
+<li><p>内部类就是在一个类内部定义一个类</p>
+</li>
+<li><p>分为</p>
+<ol>
+<li>成员内部类</li>
+<li>静态内部类</li>
+<li>局部内部类</li>
+<li>匿名内部类</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//实例</span></span><br><span class="line"><span class="comment">//Outer.java</span></span><br><span class="line"><span class="keyword">package</span> Base.First.Demo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> id= <span class="number">10010</span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">out</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;这是外部类方法&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Inner</span></span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">in</span><span class="params">()</span></span>&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;这是内部类方法&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//获得外部类的私有属性,若内部类为static则无法获取</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getId</span><span class="params">()</span></span>&#123;</span><br><span class="line">            System.out.println(id);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//Application.java</span></span><br><span class="line"><span class="keyword">package</span> Base.First.Demo.Base;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> Base.First.Demo.Outer;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Application</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Outer outer = <span class="keyword">new</span> Outer();</span><br><span class="line">        Outer.Inner inner = outer.<span class="function">new <span class="title">Inner</span><span class="params">()</span></span>;</span><br><span class="line">        outer.out();</span><br><span class="line">        inner.in();</span><br><span class="line">        inner.getId();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s1.ax1x.com/2020/10/13/0fE4zD.png" alt="结果"></p>
+<blockquote>
+<p>一个Java文件中只能有一个 public class，但可以有多个class类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Inner</span></span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="异常机制（Exception）"><a href="#异常机制（Exception）" class="headerlink" title="异常机制（Exception）"></a>异常机制（Exception）</h2><h3 id="异常简述"><a href="#异常简述" class="headerlink" title="异常简述"></a>异常简述</h3><blockquote>
+<ul>
+<li>异常指程序运行中出现的不期而至的各种状况，如：文件找不到，网络连接失败，非法参考等</li>
+<li>异常发生在程序运行期间，它影响了正常的程序执行流程</li>
+</ul>
+</blockquote>
+<ul>
+<li>异常分类：<ol>
+<li>检查性异常</li>
+<li>运行时异常</li>
+<li>错误<strong>ERROR</strong></li>
+</ol>
+</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/10/13/0feNdA.png" alt="异常体系结构" style="zoom: 50%;" />
+
+
+
+<h3 id="异常处理机制"><a href="#异常处理机制" class="headerlink" title="异常处理机制"></a>异常处理机制</h3><ul>
+<li>五个关键字：try, catch, finally, throws</li>
+<li>捕获异常</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//示例</span></span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//try监控区域</span></span><br><span class="line">    <span class="comment">//这是一个代码块</span></span><br><span class="line">    </span><br><span class="line">&#125;<span class="keyword">catch</span>(<span class="comment">/*要捕获的异常类型*/</span>ArithmeticException ae)&#123;	<span class="comment">//此处ae应该是生成的异常对象名</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//捕获异常</span></span><br><span class="line">    <span class="comment">//可以有多个catch，异常类型应由小到大，最终只生效一个，建议最后加一个大异常来见少遗漏</span></span><br><span class="line">    <span class="comment">//若出现对应异常运行此处</span></span><br><span class="line">    </span><br><span class="line">&#125;<span class="keyword">catch</span>(<span class="comment">/*要捕获的异常类型*/</span>NullPointerException ne)&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;<span class="keyword">finally</span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//处理善后</span></span><br><span class="line">    <span class="comment">//可以取舍，但建议用来释放资源</span></span><br><span class="line">    <span class="comment">//无论是否异常都运行此处</span></span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ul>
+<li>选中 CTRL + ALT + T</li>
+<li>有了try catch等异常处理后可以避免程序卡死</li>
+</ul>
+</blockquote>
+<ul>
+<li>抛出异常</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span><span class="keyword">throws</span> ArithmeticException</span>&#123;<span class="comment">//抛到上一级，让调用其的地方捕获</span></span><br><span class="line">	<span class="keyword">throw</span> <span class="keyword">new</span> ArithmeticException();	<span class="comment">//主动生成异常，一般在方法中使用   </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><p>自定义异常</p>
+<blockquote>
+<p>只需要继承Exception类即可</p>
+</blockquote>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12J41137hu?p=1">参考教学视频</a></p>
+
     </article>
     <!-- license  -->
     
@@ -903,7 +986,7 @@ height:50vh;
             <p>原文作者：<a href="https://github.com/FeOAr/FeOAr.github.io.git">FeOAr</a>
             <p>原文链接：<a href="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/">https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/</a>
             <p>发表日期：<a href="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/">October 8th 2020, 12:00:00 am</a>
-            <p>更新日期：<a href="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/">October 12th 2020, 10:39:08 pm</a>
+            <p>更新日期：<a href="https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/">October 13th 2020, 12:49:09 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -1042,7 +1125,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java%E5%AD%A6%E4%B9%A0pro%E7%89%88"><span class="toc-number">1.</span> <span class="toc-text">Java学习pro版</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">Java基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A%EF%BC%8C%E6%A0%87%E8%AF%86%E7%AC%A6%EF%BC%8C%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.1.1.</span> <span class="toc-text">注释，标识符，关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Java%E6%B3%A8%E9%87%8A"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">Java注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Java%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">Java标识符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.1.1.2.1.</span> <span class="toc-text">关键字</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="toc-number">1.1.1.2.2.</span> <span class="toc-text">标识符</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.2.</span> <span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.1.3.</span> <span class="toc-text">类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F"><span class="toc-number">1.1.4.</span> <span class="toc-text">变量常量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.1.5.</span> <span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%85%E6%9C%BA%E5%88%B6%EF%BC%8CJavaDoc"><span class="toc-number">1.1.6.</span> <span class="toc-text">包机制，JavaDoc</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%85%E6%9C%BA%E5%88%B6"><span class="toc-number">1.1.6.0.1.</span> <span class="toc-text">包机制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#JavaDoc"><span class="toc-number">1.1.6.0.2.</span> <span class="toc-text">JavaDoc</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-number">1.2.</span> <span class="toc-text">Java流程控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%94%A8%E6%88%B7%E4%BA%A4%E4%BA%92Scanner"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.用户交互Scanner</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.顺序结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.选择结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.4.</span> <span class="toc-text">4.循环结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-break-amp-continue"><span class="toc-number">1.2.5.</span> <span class="toc-text">5.break &amp; continue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%BB%83%E4%B9%A0"><span class="toc-number">1.2.6.</span> <span class="toc-text">6.练习</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text">Java方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.什么是方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%96%B9%E6%B3%95%E7%9A%84%E5%AE%9A%E4%B9%89%E4%BB%A5%E5%8F%8A%E8%B0%83%E7%94%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.方法的定义以及调用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B0%83%E7%94%A8"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">调用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.方法重载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BC%A0%E5%8F%82"><span class="toc-number">1.3.4.</span> <span class="toc-text">4.命令行传参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0"><span class="toc-number">1.3.5.</span> <span class="toc-text">5.可变参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E9%80%92%E5%BD%92"><span class="toc-number">1.3.6.</span> <span class="toc-text">6.递归</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.1.</span> <span class="toc-text">1.什么是数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%95%B0%E7%BB%84%E5%A3%B0%E6%98%8E%E5%88%9B%E5%BB%BA"><span class="toc-number">1.4.2.</span> <span class="toc-text">2.数组声明创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%95%B0%E7%BB%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.数组使用及内存分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">1.4.3.1.</span> <span class="toc-text">使用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.4.</span> <span class="toc-text">4.多维数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Arrays%E7%B1%BB"><span class="toc-number">1.4.5.</span> <span class="toc-text">5.Arrays类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.6.</span> <span class="toc-text">6.稀疏数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.5.</span> <span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-1"><span class="toc-number">1.5.1.</span> <span class="toc-text">面向对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%EF%BC%88%E5%AE%9A%E4%B9%89%EF%BC%8C%E8%B0%83%E7%94%A8%EF%BC%89"><span class="toc-number">1.5.2.</span> <span class="toc-text">方法（定义，调用）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%99%A8"><span class="toc-number">1.5.2.1.</span> <span class="toc-text">构造器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E8%A3%85"><span class="toc-number">1.5.3.</span> <span class="toc-text">封装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF"><span class="toc-number">1.5.4.</span> <span class="toc-text">继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%86%99%EF%BC%88override%EF%BC%89"><span class="toc-number">1.5.5.</span> <span class="toc-text">重写（override）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%80%81"><span class="toc-number">1.5.6.</span> <span class="toc-text">多态*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E8%BD%AC%E5%9E%8B"><span class="toc-number">1.5.7.</span> <span class="toc-text">类转型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#static"><span class="toc-number">1.5.8.</span> <span class="toc-text">static</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1%E7%B1%BB"><span class="toc-number">1.5.9.</span> <span class="toc-text">抽象类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.5.10.</span> <span class="toc-text">接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-number">1.5.11.</span> <span class="toc-text">内部类</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java%E5%AD%A6%E4%B9%A0pro%E7%89%88"><span class="toc-number">1.</span> <span class="toc-text">Java学习pro版</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">Java基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A%EF%BC%8C%E6%A0%87%E8%AF%86%E7%AC%A6%EF%BC%8C%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.1.1.</span> <span class="toc-text">注释，标识符，关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Java%E6%B3%A8%E9%87%8A"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">Java注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Java%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">Java标识符</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.1.1.2.1.</span> <span class="toc-text">关键字</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="toc-number">1.1.1.2.2.</span> <span class="toc-text">标识符</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.2.</span> <span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.1.3.</span> <span class="toc-text">类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F"><span class="toc-number">1.1.4.</span> <span class="toc-text">变量常量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.1.5.</span> <span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%85%E6%9C%BA%E5%88%B6%EF%BC%8CJavaDoc"><span class="toc-number">1.1.6.</span> <span class="toc-text">包机制，JavaDoc</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%85%E6%9C%BA%E5%88%B6"><span class="toc-number">1.1.6.0.1.</span> <span class="toc-text">包机制</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#JavaDoc"><span class="toc-number">1.1.6.0.2.</span> <span class="toc-text">JavaDoc</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6"><span class="toc-number">1.2.</span> <span class="toc-text">Java流程控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%94%A8%E6%88%B7%E4%BA%A4%E4%BA%92Scanner"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.用户交互Scanner</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.顺序结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.选择结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.4.</span> <span class="toc-text">4.循环结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-break-amp-continue"><span class="toc-number">1.2.5.</span> <span class="toc-text">5.break &amp; continue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%BB%83%E4%B9%A0"><span class="toc-number">1.2.6.</span> <span class="toc-text">6.练习</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.</span> <span class="toc-text">Java方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.什么是方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%96%B9%E6%B3%95%E7%9A%84%E5%AE%9A%E4%B9%89%E4%BB%A5%E5%8F%8A%E8%B0%83%E7%94%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.方法的定义以及调用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B0%83%E7%94%A8"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">调用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.方法重载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%BC%A0%E5%8F%82"><span class="toc-number">1.3.4.</span> <span class="toc-text">4.命令行传参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0"><span class="toc-number">1.3.5.</span> <span class="toc-text">5.可变参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E9%80%92%E5%BD%92"><span class="toc-number">1.3.6.</span> <span class="toc-text">6.递归</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.1.</span> <span class="toc-text">1.什么是数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%95%B0%E7%BB%84%E5%A3%B0%E6%98%8E%E5%88%9B%E5%BB%BA"><span class="toc-number">1.4.2.</span> <span class="toc-text">2.数组声明创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%95%B0%E7%BB%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.数组使用及内存分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">1.4.3.1.</span> <span class="toc-text">使用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.4.</span> <span class="toc-text">4.多维数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Arrays%E7%B1%BB"><span class="toc-number">1.4.5.</span> <span class="toc-text">5.Arrays类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84"><span class="toc-number">1.4.6.</span> <span class="toc-text">6.稀疏数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.5.</span> <span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-1"><span class="toc-number">1.5.1.</span> <span class="toc-text">面向对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%EF%BC%88%E5%AE%9A%E4%B9%89%EF%BC%8C%E8%B0%83%E7%94%A8%EF%BC%89"><span class="toc-number">1.5.2.</span> <span class="toc-text">方法（定义，调用）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%99%A8"><span class="toc-number">1.5.2.1.</span> <span class="toc-text">构造器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E8%A3%85"><span class="toc-number">1.5.3.</span> <span class="toc-text">封装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF"><span class="toc-number">1.5.4.</span> <span class="toc-text">继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%86%99%EF%BC%88override%EF%BC%89"><span class="toc-number">1.5.5.</span> <span class="toc-text">重写（override）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%80%81"><span class="toc-number">1.5.6.</span> <span class="toc-text">多态*</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB%E8%BD%AC%E5%9E%8B"><span class="toc-number">1.5.7.</span> <span class="toc-text">类转型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#static"><span class="toc-number">1.5.8.</span> <span class="toc-text">static</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1%E7%B1%BB"><span class="toc-number">1.5.9.</span> <span class="toc-text">抽象类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.5.10.</span> <span class="toc-text">接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E9%83%A8%E7%B1%BB"><span class="toc-number">1.5.11.</span> <span class="toc-text">内部类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E6%9C%BA%E5%88%B6%EF%BC%88Exception%EF%BC%89"><span class="toc-number">1.6.</span> <span class="toc-text">异常机制（Exception）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E7%AE%80%E8%BF%B0"><span class="toc-number">1.6.1.</span> <span class="toc-text">异常简述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6"><span class="toc-number">1.6.2.</span> <span class="toc-text">异常处理机制</span></a></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -1124,9 +1207,20 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 7
+        Total : 8
         </div>
         <!-- search  -->
         
@@ -1139,6 +1233,11 @@ top:50vh;
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2020/10/13/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C/" >常用命令行</a>
+        </li>
     
     
         <li class="archive-post-item">
