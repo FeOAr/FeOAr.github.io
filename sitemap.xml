@@ -2,23 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://github.com/FeOAr/FeOAr.github.io.git/2020/10/26/MySql%E7%AE%80%E7%95%A5%E7%AC%94%E8%AE%B0/</loc>
-    
-    <lastmod>2020-10-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://github.com/FeOAr/FeOAr.github.io.git/2020/10/08/Java%E5%AD%A6%E4%B9%A0pro%E7%89%88/</loc>
     
-    <lastmod>2020-10-27</lastmod>
+    <lastmod>2020-11-02</lastmod>
     
   </url>
   
   <url>
-    <loc>https://github.com/FeOAr/FeOAr.github.io.git/2020/10/21/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%AE%AD_2/</loc>
+    <loc>https://github.com/FeOAr/FeOAr.github.io.git/2020/10/26/MySql%E7%AE%80%E7%95%A5%E7%AC%94%E8%AE%B0/</loc>
     
-    <lastmod>2020-10-21</lastmod>
+    <lastmod>2020-11-02</lastmod>
     
   </url>
   
@@ -71,17 +64,10 @@
     
   </url>
   
-  <url>
-    <loc>https://github.com/FeOAr/FeOAr.github.io.git/2020/10/06/hello-world/</loc>
-    
-    <lastmod>2020-10-07</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://github.com/FeOAr/FeOAr.github.io.git</loc>
-    <lastmod>2020-10-28</lastmod>
+    <lastmod>2020-11-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -89,21 +75,21 @@
   
   <url>
     <loc>https://github.com/FeOAr/FeOAr.github.io.git/tags/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-10-28</lastmod>
+    <lastmod>2020-11-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://github.com/FeOAr/FeOAr.github.io.git/tags/%E5%BC%95%E7%94%A8%E5%A4%87%E5%BF%98/</loc>
-    <lastmod>2020-10-28</lastmod>
+    <lastmod>2020-11-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://github.com/FeOAr/FeOAr.github.io.git/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/</loc>
-    <lastmod>2020-10-28</lastmod>
+    <lastmod>2020-11-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
